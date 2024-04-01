@@ -7,7 +7,8 @@ st.set_page_config(
     layout='wide'
 )
 
-df = st.session_state["data"]
+#df = st.session_state["data"]
+df = pd.read_csv('https://raw.githubusercontent.com/DartagnanFreire/UT_supertrunfo/main/arquivos%20csv/ultimateteam.csv', sep='\t', encoding='utf-8')
 df_gk = df[df['Posição'].str.contains('GK')]
 df_gk = df_gk.reset_index(drop=True)
 df = df.loc[df['Posição'] != 'GK']
