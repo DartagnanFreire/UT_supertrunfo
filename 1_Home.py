@@ -37,4 +37,4 @@ st.markdown('''
             ''')
 
 df = st.session_state["data"]
-df
+
