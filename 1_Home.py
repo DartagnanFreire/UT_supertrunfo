@@ -8,10 +8,10 @@ st.set_page_config(
 )
 
 
-if "data" not in st.session_state:
+#if "data" not in st.session_state:
 
-    df = pd.read_csv('https://raw.githubusercontent.com/DartagnanFreire/UT_supertrunfo/main/arquivos%20csv/ultimateteam.csv', sep='\t', encoding='utf-8')
-    st.session_state["data"] = df
+    #df = pd.read_csv('https://raw.githubusercontent.com/DartagnanFreire/UT_supertrunfo/main/arquivos%20csv/ultimateteam.csv', sep='\t', encoding='utf-8')
+    #st.session_state["data"] = df
     
 
 st.markdown("# Ultimate Team Card Game! ⚽️")
@@ -36,5 +36,6 @@ st.markdown('''
             Equilibrio, Reação e Frieza, divididos por 8. Assim, a carta do Halland Team of The Week versão 1, possui 80 de total para essa ação.
             ''')
 
-df = st.session_state["data"]
+#df = st.session_state["data"]
+df = pd.read_csv('https://raw.githubusercontent.com/DartagnanFreire/UT_supertrunfo/main/arquivos%20csv/ultimateteam.csv', sep='\t', encoding='utf-8')
 df
