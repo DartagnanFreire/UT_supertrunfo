@@ -35,5 +35,5 @@ st.markdown('''
 
 df = pd.read_csv('https://github.com/DartagnanFreire/UT_supertrunfo/blob/main/arquivos%20csv/ultimateteam.csv', sep='\t', encoding='utf-8')
 
-st.write(df)
+df
 
