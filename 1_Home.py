@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 if "data" not in st.session_state:
-    df = pd.read_csv('/arquivos csv/ultimateteam.csv', sep='\t', encoding='utf-8')
+    df = pd.read_csv('https://github.com/DartagnanFreire/UT_supertrunfo/blob/main/arquivos%20csv/ultimateteam.csv', sep='\t', encoding='utf-8')
     st.session_state["data"] = df
     
 
