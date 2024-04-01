@@ -38,4 +38,4 @@ st.markdown('''
 
 #df = st.session_state["data"]
 df = pd.read_csv('https://raw.githubusercontent.com/DartagnanFreire/UT_supertrunfo/main/arquivos%20csv/ultimateteam.csv', sep='\t', encoding='utf-8')
-df
+
