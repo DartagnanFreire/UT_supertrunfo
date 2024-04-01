@@ -11,7 +11,7 @@ st.set_page_config(
 
 if "data" not in st.session_state:
     # URL do arquivo CSV no GitHub
-    url_csv = "https://docs.google.com/spreadsheets/d/14QWvW6hgoGe4Fdc5g1IogTh28tMVASgPl2lxRp9fxls/edit#gid=1168695417"
+    url_csv = "https://docs.google.com/spreadsheets/d/14QWvW6hgoGe4Fdc5g1IogTh28tMVASgPl2lxRp9fxls/edit?usp=sharing"
 
     # Fazer a requisição HTTP para obter o conteúdo do arquivo CSV
     resposta = requests.get(url_csv)
