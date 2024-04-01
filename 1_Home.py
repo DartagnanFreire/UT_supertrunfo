@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import requests
-import gdown
 
 st.set_page_config(
     page_title='Home',
@@ -9,15 +8,11 @@ st.set_page_config(
 )
 
 
-
 if "data" not in st.session_state:
     # URL do arquivo CSV no Google Drive
     url_csv = "https://docs.google.com/spreadsheets/d/14QWvW6hgoGe4Fdc5g1IogTh28tMVASgPl2lxRp9fxls/export?format=csv"
 
-    # Baixar o arquivo CSV do Google Drive
-    arquivo_csv = gdown.download(url_csv, quiet=False)
-
-    df = pd.read_csv(resposta.content)
+    df = pd.read_csv(url_csv)
     st.session_state["data"] = df
     
 
