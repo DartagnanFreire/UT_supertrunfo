@@ -9,10 +9,8 @@ st.set_page_config(
 
 
 if "data" not in st.session_state:
-    # URL do arquivo CSV no Google Drive
-    url_csv = "https://docs.google.com/spreadsheets/d/14QWvW6hgoGe4Fdc5g1IogTh28tMVASgPl2lxRp9fxls/export?format=csv"
 
-    df = pd.read_csv(url_csv)
+    df = pd.read_csv('https://raw.githubusercontent.com/DartagnanFreire/UT_supertrunfo/main/arquivos%20csv/ultimateteam.csv')
     st.session_state["data"] = df
     
 
